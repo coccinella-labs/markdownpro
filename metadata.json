@@ -1,0 +1,8 @@
+{
+  "name": "Harper Markdown Pro",
+  "description": "A sophisticated Markdown editor featuring real-time preview, AI-powered writing assistance, and document management.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

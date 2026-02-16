@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harper | Obsidian Kraft</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* Obsidian Kraft Palette */
+            --bg-primary: #1e1e1e;
+            --bg-secondary: #161616;
+            --text-primary: #e5e1da;
+            --border-subtle: #2d2d2d;
+            --accent: #dcc8b1;
+            --accent-muted: #4b3f35;
+        }
+
+        .dark {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #000000;
+            --text-primary: #d1c1b1;
+            --border-subtle: #1a1a1a;
+            --accent: #b4947d;
+            color-scheme: dark;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            -webkit-font-smoothing: antialiased;
+            transition: background-color 0.4s ease, color 0.4s ease;
+        }
+
+        .mono {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+        }
+
+        /* Markdown Preview Styling */
+        .prose {
+            max-width: 100%;
+            color: #b5afaa;
+        }
+        
+        .prose h1 { font-size: 2.25rem; font-weight: 600; letter-spacing: -0.03em; margin-bottom: 2rem; color: var(--text-primary); }
+        .prose h2 { font-size: 1.6rem; font-weight: 600; margin-top: 2.5rem; margin-bottom: 1rem; color: var(--text-primary); }
+        .prose h3 { font-size: 1.3rem; font-weight: 600; margin-top: 2rem; color: var(--text-primary); }
+        .prose p { line-height: 1.85; margin-bottom: 1.6rem; }
+        
+        .prose blockquote { 
+            border-left: 3px solid var(--accent); 
+            padding-left: 1.5rem; 
+            font-style: italic; 
+            color: #8c847d; 
+            margin: 2.5rem 0; 
+            background: rgba(220, 200, 177, 0.03);
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            border-radius: 0 12px 12px 0;
+        }
+
+        .prose code { 
+            background: #2d2d2d; 
+            padding: 0.2rem 0.4rem; 
+            border-radius: 6px; 
+            font-size: 0.85em; 
+            color: var(--accent);
+        }
+
+        .prose pre {
+            background: #161616;
+            padding: 1.75rem;
+            border-radius: 16px;
+            margin: 2.5rem 0;
+            overflow-x: auto;
+            border: 1px solid var(--border-subtle);
+        }
+
+        .prose img { 
+            border-radius: 16px; 
+            margin: 2.5rem 0; 
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            border: 1px solid var(--border-subtle);
+        }
+
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+
+        /* Focus Ring */
+        .focus-ring:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px var(--accent);
+        }
+
+        ::selection {
+            background: rgba(220, 200, 177, 0.2);
+            color: inherit;
+        }
+    </style>
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@19.0.0",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+    "@google/genai": "https://esm.sh/@google/genai@1.41.0",
+    "lucide-react": "https://esm.sh/lucide-react@0.460.0",
+    "marked": "https://esm.sh/marked@15.0.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
