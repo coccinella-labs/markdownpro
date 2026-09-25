@@ -2,8 +2,6 @@
   <img src="https://raw.githubusercontent.com/Coccinella-Labs/markdownpro/main/.github/assets/thumbnail.png" alt="markdownpro" width="100%">
 </p>
 
-typescript app for markdown workflows.
-
 React 19 + Vite + TypeScript markdown editor with Gemini AI assistance (`@google/genai`), Markdown rendering (`marked`), and Lucide icons.
 
 ## Run
